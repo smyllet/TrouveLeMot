@@ -1,0 +1,8 @@
+<resources>
+    <string name="logo_app">Logo App</string>
+    <string name="Button_rules">Bouton règles</string>
+    <string name="Button_param">Bouton paramètre</string>
+    <string name="Button_credits">Bouton Crédits</string>
+    <string name="Card_Categori">Carte Catégorie</string>
+    <string name="Card_Letter">Carte Lettre</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Trouve le mot</string>
+    <string name="suivant">Suivant</string>
+    <string name="void_lettre">-</string>
+    <string name="void_categorie">- - - - -</string>
+    <string name="play">Appuyer pour jouer</string>
+    <string name="dev_name">Par smyllet</string>
+    <string name="retour">Retour</string>
+    <string name="quiter">Quitter</string>
+    <string name="jouer">Jouer</string>
+    <string name="regle">Comment jouer?</string>
+    <string name="app_descrip">Le principe est simple, trouver un mot appartenent à la catégorie et commençant par la lettre affichée à l\'écran \n\nPour changer une carte appuyer sur la carte en question ou appuyez sur suivant pour changer les 2 cartes</string>
+    <string name="credit">Crédits</string>
+    <string name="credit_list">Création : Smyllet \nRédaction : Murkykwak \nAide : Dytanit \n\ndynivers.fr</string>
+    <string name="version_info">Version : 1.0.0</string>
+    <string name="none">none</string>
+    <string name="paramtitle">Paramètres</string>
+</resources>

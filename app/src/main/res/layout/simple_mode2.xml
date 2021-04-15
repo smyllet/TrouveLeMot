@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbackground"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo_app"
+        android:padding="12sp"
+        android:src="@drawable/logo_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/conteneurcarte"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:baselineAligned="false">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ImageCardCategorie"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/carte_categorie"
+                android:contentDescription="@string/Card_Categori" />
+
+            <TextView
+                android:id="@+id/TextCardCategorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                android:text="@string/void_categorie"
+                android:textColor="@color/bleu"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ImageCardLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/carte_lettre"
+                android:contentDescription="@string/Card_Letter" />
+
+            <TextView
+                android:id="@+id/TextCardLettre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/void_lettre"
+                android:textColor="@color/bleu"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/Zone_MultiPlayers_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/NextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/suivant"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/QuitButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/quiter"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Zone_MultiPlayers_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:layout_marginStart="5sp"
+            android:layout_weight="1"
+            android:textColor="@color/bleu"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:layout_marginStart="5sp"
+            android:layout_weight="1"
+            android:textColor="@color/bleu"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:layout_marginStart="5sp"
+            android:layout_weight="1"
+            android:textColor="@color/bleu"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:layout_marginStart="5sp"
+            android:layout_weight="1"
+            android:textColor="@color/bleu"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:layout_marginStart="5sp"
+            android:layout_weight="1"
+            android:textColor="@color/bleu"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

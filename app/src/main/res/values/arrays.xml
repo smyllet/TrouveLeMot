@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nbplList">
+        <item>2 Joueur</item>
+        <item>3 Joueur</item>
+        <item>4 Joueur</item>
+        <item>5 Joueur</item>
+    </string-array>
+    <string-array name="nbplListValues">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
